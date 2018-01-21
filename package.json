@@ -1,5 +1,9 @@
 {
-	"scripts": {
-		"start": "node practice2.js"
-	}
+  "scripts": {
+    "start": "node practice2.js"
+  },
+  "dependencies": {
+    "express-useragent": "^1.0.8",
+    "os-locale": "^2.1.0"
+  }
 }
