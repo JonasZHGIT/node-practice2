@@ -9,7 +9,8 @@ http.createServer(function(req, res) {
 	osLocale().then(locale => {
 		var result = {
 			"ipaddress": user_ip,
-			"language": locale,
+			"language": ua.language,
+			// "language": locale,
 			"software": ua.source.split('(')[1].split(')')[0]
 		};
 		res.end(JSON.stringify(result));
